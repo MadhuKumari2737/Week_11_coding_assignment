@@ -1,0 +1,79 @@
+<!--Using any of the tools you’ve worked with so far, create a game of Tic-Tac-Toe.
+Create a Tic-Tac-Toe game grid using your HTML element of choice. 
+When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
+A heading should say whether it is X’s or O’s turn and change with each move made.
+A button should be available to clear the grid and restart the game.
+When a player has won, or the board is full and the game results in a draw, a Bootstrap alert or similar Bootstrap component should appear across the screen announcing the winner.--->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script src="node-modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+    </body>
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    
+     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Main tag with background as class -->
+    <main class="background">
+        <section class="title">
+            <h1>TIC TAC TOE!</h1>
+        </section>
+
+        <!-- Displaying whose player's turn is it -->
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+
+        <!-- Creating the tiles for the game -->
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+
+        
+        <section class="display announcer hide"></section>
+
+        <section class="controls">
+            <button id="restart">Start New Game</button>
+        </section>
+    </main>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
